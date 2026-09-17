@@ -11,6 +11,10 @@ interface ProjectSidebarProps {
   onClose: () => void
 }
 
+/**
+ * Renders the project navigation overlay, hiding it from view and assistive
+ * technology when closed and exposing a control that requests closure.
+ */
 export function ProjectSidebar({ isOpen, onClose }: ProjectSidebarProps) {
   return (
     <aside

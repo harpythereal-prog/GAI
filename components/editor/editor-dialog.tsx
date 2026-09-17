@@ -20,6 +20,10 @@ interface EditorDialogProps {
   children?: ReactNode
 }
 
+/**
+ * Renders a controlled dialog shell with optional description, body, and footer
+ * content, forwarding requests to change its open state.
+ */
 export function EditorDialog({
   open,
   onOpenChange,
