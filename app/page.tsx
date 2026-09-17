@@ -1,8 +1,13 @@
-export default function Home() {
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div>ghost AI</div>
-      <button>I am the FUTURE Bicth!!!</button>
-          </div>
-  );
+import { redirect } from "next/navigation"
+
+import { auth } from "@clerk/nextjs/server"
+
+export default async function Home() {
+  const { userId } = await auth()
+
+  if (userId) {
+    redirect("/editor")
+  }
+
+  redirect("/sign-in")
 }
