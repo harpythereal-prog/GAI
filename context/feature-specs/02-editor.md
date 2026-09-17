@@ -22,7 +22,7 @@ Requierments:
 - sidebar should float above the editor canvas 
 - opening it should not push page content 
 - lides in from the left 
-- accepts 'isOpen' and {onClose} prop
+- accepts 'isOpen' prop
 - header with 'Projects' title + close button
 - shadcn 'Tabs':
  -My Projects
